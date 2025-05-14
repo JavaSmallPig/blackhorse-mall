@@ -1,0 +1,550 @@
+15:01:15:106  INFO 6812 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 17.0.14 on Diamond with PID 6812 (D:\WorkSpace\Projects\hmall\cart-service\target\classes started by Administrator in D:\WorkSpace\Projects\hmall)
+15:01:15:108 DEBUG 6812 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:01:15:109  INFO 6812 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:01:16:476  INFO 6812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+15:01:16:477  INFO 6812 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+15:01:16:479  INFO 6812 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:01:16:479  INFO 6812 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:01:16:483  INFO 6812 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+15:01:16:490  INFO 6812 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:01:16:490  INFO 6812 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:01:16:570  INFO 6812 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:01:16:571  INFO 6812 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1408 ms
+15:01:17:490  INFO 6812 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:01:17:582  INFO 6812 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+15:01:17:583  INFO 6812 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:01:17:586  INFO 6812 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:01:17:611  INFO 6812 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:01:17:733  INFO 6812 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 3.253 seconds (JVM running for 4.286)
+15:01:19:311  INFO 6812 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:01:19:311  INFO 6812 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:01:19:313  INFO 6812 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+15:01:32:112  INFO 6812 --- [http-nio-8082-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:01:32:504  INFO 6812 --- [http-nio-8082-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:01:32:511 DEBUG 6812 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:01:32:545 DEBUG 6812 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:01:32:588 DEBUG 6812 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:01:44:222  INFO 6812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+15:01:44:231  INFO 6812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+15:20:44:939  INFO 7544 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 17.0.14 on Diamond with PID 7544 (D:\WorkSpace\Projects\hmall\cart-service\target\classes started by Administrator in D:\WorkSpace\Projects\hmall)
+15:20:44:941 DEBUG 7544 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:20:44:941  INFO 7544 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:20:46:066  INFO 7544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+15:20:46:067  INFO 7544 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+15:20:46:068  INFO 7544 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:20:46:068  INFO 7544 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:20:46:071  INFO 7544 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+15:20:46:080  INFO 7544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:20:46:080  INFO 7544 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:20:46:158  INFO 7544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:20:46:159  INFO 7544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1175 ms
+15:20:46:963  INFO 7544 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:20:47:045  INFO 7544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+15:20:47:046  INFO 7544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:20:47:048  INFO 7544 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:20:47:072  INFO 7544 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:20:47:172  INFO 7544 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 2.756 seconds (JVM running for 3.476)
+15:20:57:124  INFO 7544 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:20:57:125  INFO 7544 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:20:57:125  INFO 7544 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+15:21:03:413  INFO 7544 --- [http-nio-8082-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:21:03:635  INFO 7544 --- [http-nio-8082-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:21:03:642 DEBUG 7544 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:21:03:667 DEBUG 7544 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:21:03:694 DEBUG 7544 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:21:03:913 ERROR 7544 --- [http-nio-8082-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8081/items": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect] with root cause
+
+java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:579) ~[na:na]
+	at java.base/sun.nio.ch.Net.connect(Net.java:568) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:583) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1324) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1257) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1143) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1072) ~[na:na]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:782) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:738) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:647) ~[spring-web-5.3.27.jar:5.3.27]
+	at com.hmall.cart.service.impl.CartServiceImpl.handleCartItems(CartServiceImpl.java:94) ~[classes/:na]
+	at com.hmall.cart.service.impl.CartServiceImpl.queryMyCarts(CartServiceImpl.java:82) ~[classes/:na]
+	at com.hmall.cart.service.impl.CartServiceImpl$$FastClassBySpringCGLIB$$7813828f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.27.jar:5.3.27]
+	at com.hmall.cart.service.impl.CartServiceImpl$$EnhancerBySpringCGLIB$$7e29f4d8.queryMyCarts(<generated>) ~[classes/:na]
+	at com.hmall.cart.controller.CartController.queryMyCarts(CartController.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+15:22:01:487 DEBUG 7544 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:22:01:488 DEBUG 7544 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:22:01:489 DEBUG 7544 --- [http-nio-8082-exec-10] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:22:01:618 ERROR 7544 --- [http-nio-8082-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":"2025-05-13T07:22:01.583+00:00","status":400,"error":"Bad Request","path":"/items"}"] with root cause
+
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":"2025-05-13T07:22:01.583+00:00","status":400,"error":"Bad Request","path":"/items"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:738) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:647) ~[spring-web-5.3.27.jar:5.3.27]
+	at com.hmall.cart.service.impl.CartServiceImpl.handleCartItems(CartServiceImpl.java:94) ~[classes/:na]
+	at com.hmall.cart.service.impl.CartServiceImpl.queryMyCarts(CartServiceImpl.java:82) ~[classes/:na]
+	at com.hmall.cart.service.impl.CartServiceImpl$$FastClassBySpringCGLIB$$7813828f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.27.jar:5.3.27]
+	at com.hmall.cart.service.impl.CartServiceImpl$$EnhancerBySpringCGLIB$$7e29f4d8.queryMyCarts(<generated>) ~[classes/:na]
+	at com.hmall.cart.controller.CartController.queryMyCarts(CartController.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+15:24:33:399  INFO 7544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+15:24:33:404  INFO 7544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+15:24:35:202  INFO 5784 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 17.0.14 on Diamond with PID 5784 (D:\WorkSpace\Projects\hmall\cart-service\target\classes started by Administrator in D:\WorkSpace\Projects\hmall)
+15:24:35:204 DEBUG 5784 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:24:35:204  INFO 5784 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:24:36:034  INFO 5784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+15:24:36:034  INFO 5784 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+15:24:36:035  INFO 5784 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:24:36:035  INFO 5784 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:24:36:038  INFO 5784 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+15:24:36:044  INFO 5784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:24:36:044  INFO 5784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:24:36:113  INFO 5784 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:24:36:113  INFO 5784 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 877 ms
+15:24:36:740  INFO 5784 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:24:36:800  INFO 5784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+15:24:36:800  INFO 5784 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:24:36:802  INFO 5784 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:24:36:820  INFO 5784 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:24:36:895  INFO 5784 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 2.062 seconds (JVM running for 2.621)
+15:24:53:028  INFO 5784 --- [http-nio-8082-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:24:53:028  INFO 5784 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:24:53:030  INFO 5784 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+15:24:53:130  INFO 5784 --- [http-nio-8082-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:24:53:390  INFO 5784 --- [http-nio-8082-exec-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:24:53:397 DEBUG 5784 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:24:53:419 DEBUG 5784 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:24:53:440 DEBUG 5784 --- [http-nio-8082-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:24:53:644 ERROR 5784 --- [http-nio-8082-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":"2025-05-13T07:24:53.587+00:00","status":400,"error":"Bad Request","path":"/items"}"] with root cause
+
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 : "{"timestamp":"2025-05-13T07:24:53.587+00:00","status":400,"error":"Bad Request","path":"/items"}"
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:101) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:168) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:122) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.ResponseErrorHandler.handleError(ResponseErrorHandler.java:63) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:825) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:783) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:738) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:647) ~[spring-web-5.3.27.jar:5.3.27]
+	at com.hmall.cart.service.impl.CartServiceImpl.handleCartItems(CartServiceImpl.java:94) ~[classes/:na]
+	at com.hmall.cart.service.impl.CartServiceImpl.queryMyCarts(CartServiceImpl.java:82) ~[classes/:na]
+	at com.hmall.cart.service.impl.CartServiceImpl$$FastClassBySpringCGLIB$$7813828f.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.27.jar:5.3.27]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.27.jar:5.3.27]
+	at com.hmall.cart.service.impl.CartServiceImpl$$EnhancerBySpringCGLIB$$92a0e340.queryMyCarts(<generated>) ~[classes/:na]
+	at com.hmall.cart.controller.CartController.queryMyCarts(CartController.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+15:25:30:859  INFO 5784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+15:25:30:864  INFO 5784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+15:25:34:272  INFO 12248 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 17.0.14 on Diamond with PID 12248 (D:\WorkSpace\Projects\hmall\cart-service\target\classes started by Administrator in D:\WorkSpace\Projects\hmall)
+15:25:34:274 DEBUG 12248 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:25:34:275  INFO 12248 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:25:35:184  INFO 12248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+15:25:35:185  INFO 12248 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+15:25:35:185  INFO 12248 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:25:35:185  INFO 12248 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:25:35:188  INFO 12248 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+15:25:35:195  INFO 12248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:25:35:196  INFO 12248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:25:35:282  INFO 12248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:25:35:282  INFO 12248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 971 ms
+15:25:36:043  INFO 12248 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:25:36:113  INFO 12248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+15:25:36:114  INFO 12248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:25:36:116  INFO 12248 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:25:36:135  INFO 12248 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:25:36:222  INFO 12248 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 2.343 seconds (JVM running for 2.8)
+15:25:43:722  INFO 12248 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:25:43:723  INFO 12248 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:25:43:724  INFO 12248 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+15:25:43:815  INFO 12248 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:25:44:061  INFO 12248 --- [http-nio-8082-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:25:44:067 DEBUG 12248 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:25:44:090 DEBUG 12248 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:25:44:113 DEBUG 12248 --- [http-nio-8082-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:39:29:472  INFO 12248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+15:39:29:481  INFO 12248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+15:48:58:756  INFO 7960 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 17.0.14 on Diamond with PID 7960 (D:\WorkSpace\Projects\hmall\cart-service\target\classes started by Administrator in D:\WorkSpace\Projects\hmall)
+15:48:58:758 DEBUG 7960 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+15:48:58:759  INFO 7960 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+15:48:59:697  INFO 7960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+15:48:59:698  INFO 7960 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+15:48:59:698  INFO 7960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+15:48:59:698  INFO 7960 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+15:48:59:702  INFO 7960 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+15:48:59:708  INFO 7960 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+15:48:59:708  INFO 7960 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+15:48:59:774  INFO 7960 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+15:48:59:774  INFO 7960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 979 ms
+15:49:00:486  INFO 7960 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+15:49:00:550  INFO 7960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+15:49:00:551  INFO 7960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+15:49:00:553  INFO 7960 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+15:49:00:571  INFO 7960 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+15:49:00:652  INFO 7960 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 2.309 seconds (JVM running for 2.804)
+15:49:18:478  INFO 7960 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:49:18:478  INFO 7960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+15:49:18:480  INFO 7960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+15:49:27:871  INFO 7960 --- [http-nio-8082-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+15:49:28:104  INFO 7960 --- [http-nio-8082-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+15:49:28:110 DEBUG 7960 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+15:49:28:133 DEBUG 7960 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+15:49:28:154 DEBUG 7960 --- [http-nio-8082-exec-5] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+15:49:45:630  INFO 7960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+15:49:45:642  INFO 7960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:17:56:915  INFO 18252 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 17.0.14 on Diamond with PID 18252 (D:\WorkSpace\Projects\hmall\cart-service\target\classes started by Administrator in D:\WorkSpace\Projects\hmall)
+16:17:56:917 DEBUG 18252 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:17:56:918  INFO 18252 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+16:17:57:659  INFO 18252 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b268b9dd-c5e7-3f68-9fcb-e4b3836978d0
+16:17:57:931  INFO 18252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+16:17:57:932  INFO 18252 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+16:17:57:933  INFO 18252 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:17:57:933  INFO 18252 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:17:57:937  INFO 18252 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+16:17:57:945  INFO 18252 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:17:57:945  INFO 18252 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:17:58:044  INFO 18252 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:17:58:044  INFO 18252 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1084 ms
+16:17:58:983  INFO 18252 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+16:17:59:118  INFO 18252 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 0a9ad557-8659-4683-ab19-4d5abd82137d
+16:17:59:159  INFO 18252 --- [main] org.reflections.Reflections              : Reflections took 21 ms to scan 1 urls, producing 3 keys and 6 values 
+16:17:59:177  INFO 18252 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 4 keys and 9 values 
+16:17:59:185  INFO 18252 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+16:17:59:187  WARN 18252 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+16:17:59:198  INFO 18252 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 1 keys and 5 values 
+16:17:59:206  INFO 18252 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+16:17:59:215  INFO 18252 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 2 keys and 8 values 
+16:17:59:217  WARN 18252 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+16:17:59:218  INFO 18252 --- [main] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] RpcClient init label, labels = {module=naming, source=sdk}
+16:17:59:219  INFO 18252 --- [main] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+16:17:59:220  INFO 18252 --- [main] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+16:17:59:220  INFO 18252 --- [main] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+16:17:59:221  INFO 18252 --- [main] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Try to connect to server on start up, server: {serverIp = '192.168.227.133', server main port = 8848}
+16:17:59:852  INFO 18252 --- [main] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Success to connect to server [192.168.227.133:8848] on start up, connectionId = 1747124278275_192.168.227.1_56687
+16:17:59:853  INFO 18252 --- [main] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+16:17:59:853  INFO 18252 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Notify connected event to listeners.
+16:17:59:853  INFO 18252 --- [main] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$914/0x000001b181710000
+16:17:59:892  INFO 18252 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+16:17:59:998  INFO 18252 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.205.1:8083 register finished
+16:17:59:999  INFO 18252 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+16:18:00:003  INFO 18252 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+16:18:00:056  INFO 18252 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+16:18:00:198  INFO 18252 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 4.084 seconds (JVM running for 4.78)
+16:18:00:401  INFO 18252 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Receive server push request, request = NotifySubscriberRequest, requestId = 4
+16:18:00:405  INFO 18252 --- [nacos-grpc-client-executor-8] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Ack server push request, request = NotifySubscriberRequest, requestId = 4
+16:18:16:788  INFO 18252 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:18:16:788  INFO 18252 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:18:16:789  INFO 18252 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+16:18:32:638  INFO 18252 --- [http-nio-8083-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+16:18:33:817  INFO 18252 --- [http-nio-8083-exec-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:18:33:824 DEBUG 18252 --- [http-nio-8083-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:18:33:847 DEBUG 18252 --- [http-nio-8083-exec-10] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:18:33:989 DEBUG 18252 --- [http-nio-8083-exec-10] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:18:34:662  INFO 18252 --- [nacos-grpc-client-executor-18] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Receive server push request, request = NotifySubscriberRequest, requestId = 5
+16:18:34:663  INFO 18252 --- [nacos-grpc-client-executor-18] com.alibaba.nacos.common.remote.client   : [0a9ad557-8659-4683-ab19-4d5abd82137d] Ack server push request, request = NotifySubscriberRequest, requestId = 5
+16:18:37:182 DEBUG 18252 --- [http-nio-8083-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:18:37:182 DEBUG 18252 --- [http-nio-8083-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:18:37:184 DEBUG 18252 --- [http-nio-8083-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:18:38:217 DEBUG 18252 --- [http-nio-8083-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:18:38:218 DEBUG 18252 --- [http-nio-8083-exec-9] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:18:38:220 DEBUG 18252 --- [http-nio-8083-exec-9] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:18:38:858 DEBUG 18252 --- [http-nio-8083-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:18:38:858 DEBUG 18252 --- [http-nio-8083-exec-8] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:18:38:860 DEBUG 18252 --- [http-nio-8083-exec-8] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:18:39:352 DEBUG 18252 --- [http-nio-8083-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:18:39:353 DEBUG 18252 --- [http-nio-8083-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:18:39:355 DEBUG 18252 --- [http-nio-8083-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:35:06:974  WARN 18252 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:35:06:974  WARN 18252 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:35:06:975  WARN 18252 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:35:06:975  WARN 18252 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:35:07:010  INFO 18252 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:35:07:019  INFO 18252 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:35:07:341  INFO 18252 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+16:35:07:341  INFO 18252 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@5f94b4f0[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+16:35:07:341  INFO 18252 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1747124278275_192.168.227.1_56687
+16:35:07:344  INFO 18252 --- [nacos-grpc-client-executor-243] c.a.n.c.remote.client.grpc.GrpcClient    : [1747124278275_192.168.227.1_56687]Ignore complete event,isRunning:false,isAbandon=false
+16:35:07:347  INFO 18252 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@40f1140d[Running, pool size = 4, active threads = 0, queued tasks = 0, completed tasks = 244]
+16:35:07:351  INFO 18252 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:35:07:363  INFO 18252 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:35:15:238  INFO 18712 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 17.0.14 on Diamond with PID 18712 (D:\WorkSpace\Projects\hmall\cart-service\target\classes started by Administrator in D:\WorkSpace\Projects\hmall)
+16:35:15:241 DEBUG 18712 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:35:15:241  INFO 18712 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+16:35:16:723 ERROR 18712 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Either 'name' or 'value' must be provided in @FeignClient
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.getClientName(FeignClientsRegistrar.java:406) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.registerFeignClients(FeignClientsRegistrar.java:199) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.cloud.openfeign.FeignClientsRegistrar.registerBeanDefinitions(FeignClientsRegistrar.java:151) ~[spring-cloud-openfeign-core-3.1.3.jar:3.1.3]
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:396) ~[spring-context-5.3.27.jar:5.3.27]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:395) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:157) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:129) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:343) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:748) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.cart.CartApplication.main(CartApplication.java:19) ~[classes/:na]
+
+16:35:46:275  INFO 9860 --- [main] com.hmall.cart.CartApplication           : Starting CartApplication using Java 17.0.14 on Diamond with PID 9860 (D:\WorkSpace\Projects\hmall\cart-service\target\classes started by Administrator in D:\WorkSpace\Projects\hmall)
+16:35:46:278 DEBUG 9860 --- [main] com.hmall.cart.CartApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+16:35:46:279  INFO 9860 --- [main] com.hmall.cart.CartApplication           : The following 1 profile is active: "local"
+16:35:47:292  INFO 9860 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ac72a238-ecfe-3f53-8d26-a060939bd3e3
+16:35:47:704  INFO 9860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8083 (http)
+16:35:47:704  INFO 9860 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [2.0.8] using APR version [1.7.4].
+16:35:47:704  INFO 9860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:35:47:704  INFO 9860 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:35:47:708  INFO 9860 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+16:35:47:714  INFO 9860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:35:47:715  INFO 9860 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:35:47:806  INFO 9860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:35:47:806  INFO 9860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1485 ms
+16:35:47:943  INFO 9860 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+16:35:48:583  INFO 9860 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+16:35:48:917  INFO 9860 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 1cc6afc1-cc48-487a-b938-40289cb3483a
+16:35:48:957  INFO 9860 --- [main] org.reflections.Reflections              : Reflections took 21 ms to scan 1 urls, producing 3 keys and 6 values 
+16:35:48:975  INFO 9860 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 4 keys and 9 values 
+16:35:48:984  INFO 9860 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+16:35:48:985  WARN 9860 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+16:35:48:991  INFO 9860 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+16:35:48:998  INFO 9860 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+16:35:49:008  INFO 9860 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 2 keys and 8 values 
+16:35:49:010  WARN 9860 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+16:35:49:010  INFO 9860 --- [main] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] RpcClient init label, labels = {module=naming, source=sdk}
+16:35:49:012  INFO 9860 --- [main] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+16:35:49:012  INFO 9860 --- [main] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+16:35:49:012  INFO 9860 --- [main] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+16:35:49:013  INFO 9860 --- [main] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Try to connect to server on start up, server: {serverIp = '192.168.227.133', server main port = 8848}
+16:35:49:628  INFO 9860 --- [main] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Success to connect to server [192.168.227.133:8848] on start up, connectionId = 1747125349478_192.168.227.1_57135
+16:35:49:629  INFO 9860 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Notify connected event to listeners.
+16:35:49:629  INFO 9860 --- [main] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+16:35:49:629  INFO 9860 --- [main] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$989/0x00000222b47b8a98
+16:35:49:679  INFO 9860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8083 (http) with context path ''
+16:35:49:688  INFO 9860 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP cart-service 192.168.205.1:8083 register finished
+16:35:49:758  INFO 9860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+16:35:49:761  INFO 9860 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+16:35:49:781  INFO 9860 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+16:35:49:861  INFO 9860 --- [main] com.hmall.cart.CartApplication           : Started CartApplication in 4.103 seconds (JVM running for 4.574)
+16:35:50:183  INFO 9860 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Receive server push request, request = NotifySubscriberRequest, requestId = 10
+16:35:50:195  INFO 9860 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Ack server push request, request = NotifySubscriberRequest, requestId = 10
+16:36:02:545  INFO 9860 --- [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:36:02:545  INFO 9860 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:36:02:546  INFO 9860 --- [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+16:36:02:628  INFO 9860 --- [http-nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+16:36:02:892  INFO 9860 --- [http-nio-8083-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:36:02:898 DEBUG 9860 --- [http-nio-8083-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:36:02:920 DEBUG 9860 --- [http-nio-8083-exec-1] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:36:02:941 DEBUG 9860 --- [http-nio-8083-exec-1] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:36:03:795  INFO 9860 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Receive server push request, request = NotifySubscriberRequest, requestId = 11
+16:36:03:795  INFO 9860 --- [nacos-grpc-client-executor-13] com.alibaba.nacos.common.remote.client   : [1cc6afc1-cc48-487a-b938-40289cb3483a] Ack server push request, request = NotifySubscriberRequest, requestId = 11
+16:36:04:902 DEBUG 9860 --- [http-nio-8083-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:36:04:902 DEBUG 9860 --- [http-nio-8083-exec-4] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:36:04:904 DEBUG 9860 --- [http-nio-8083-exec-4] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:36:05:961 DEBUG 9860 --- [http-nio-8083-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:36:05:961 DEBUG 9860 --- [http-nio-8083-exec-3] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:36:05:964 DEBUG 9860 --- [http-nio-8083-exec-3] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:36:06:617 DEBUG 9860 --- [http-nio-8083-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:36:06:617 DEBUG 9860 --- [http-nio-8083-exec-2] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:36:06:619 DEBUG 9860 --- [http-nio-8083-exec-2] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:36:07:132 DEBUG 9860 --- [http-nio-8083-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==>  Preparing: SELECT id,user_id,item_id,num,name,spec,price,image,create_time,update_time FROM cart WHERE (user_id = ?)
+16:36:07:132 DEBUG 9860 --- [http-nio-8083-exec-5] c.h.cart.mapper.CartMapper.selectList    : ==> Parameters: 1(Long)
+16:36:07:134 DEBUG 9860 --- [http-nio-8083-exec-5] c.h.cart.mapper.CartMapper.selectList    : <==      Total: 1
+16:59:50:507  WARN 9860 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:59:50:507  WARN 9860 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:59:50:508  WARN 9860 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:59:50:508  WARN 9860 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:59:50:542  INFO 9860 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+16:59:50:548  INFO 9860 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+16:59:50:899  INFO 9860 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+16:59:50:899  INFO 9860 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@390fe830[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+16:59:50:899  INFO 9860 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1747125349478_192.168.227.1_57135
+16:59:50:902  INFO 9860 --- [nacos-grpc-client-executor-308] c.a.n.c.remote.client.grpc.GrpcClient    : [1747125349478_192.168.227.1_57135]Ignore complete event,isRunning:false,isAbandon=false
+16:59:50:906  INFO 9860 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@12e5b6bd[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 309]
+16:59:50:921  INFO 9860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:59:51:005  INFO 9860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

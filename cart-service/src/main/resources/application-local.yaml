@@ -1,0 +1,8 @@
+hm:
+  db:
+    host: 192.168.227.133
+    pw: 1234
+spring:
+  cloud:
+    nacos:
+      server-addr: 192.168.227.133
