@@ -1,7 +1,11 @@
 hm:
   db:
     host: 192.168.227.133
+    database: hm-cart
     pw: 1234
+  swagger:
+    title: "黑马商城购物车服务接口文档"
+    package: com.hmall.cart.controller
 spring:
   cloud:
     nacos:
