@@ -3,6 +3,8 @@ server:
 feign:
   okhttp:
     enabled: true
+  sentinel:
+    enabled: true
 hm:
   db:
     host: ${hm.db.host}
@@ -11,3 +13,9 @@ hm:
   swagger:
     title: ${hm.swagger.title}
     package: ${hm.swagger.package}
+spring:
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 192.168.227.133:8858
+      http-method-specify: true #是否设置请求方式作为资源名称
